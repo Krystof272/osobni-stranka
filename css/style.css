@@ -250,7 +250,34 @@ footer p {
 }
 
 @media (prefers-contrast: more) {
-  /* TODO */
+  :root {
+    color-scheme: light;
+    --page-background: #ffffff;
+    --surface: #ffffff;
+    --text: #000000;
+    --muted-text: #000000;
+    --link: #003b8e;
+    --header-background: #000000;
+    --border: #000000;
+    --table-header-background: #ffffff;
+  }
+
+  *,
+  *::before,
+  *::after {
+    background-image: none !important;
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1em;
+  }
+
+  .card,
+  th,
+  td {
+    border-width: 0.125rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
