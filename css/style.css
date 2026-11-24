@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light;
+  color-scheme: light dark;
   --page-background: #f3f6f8;
   --surface: #ffffff;
   --text: #17212b;
@@ -7,6 +7,7 @@
   --link: #0645ad;
   --header-background: #12304a;
   --border: #687783;
+  --table-header-background: #e7edf2;
 }
 
 * {
@@ -174,7 +175,7 @@ td {
 }
 
 th {
-  background: #e7edf2;
+  background: var(--table-header-background);
 }
 
 address {
@@ -236,7 +237,15 @@ footer p {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* TODO */
+    color-scheme: dark;
+    --page-background: #101820;
+    --surface: #18232d;
+    --text: #f1f5f9;
+    --muted-text: #c4d0da;
+    --link: #8ab4f8;
+    --header-background: #002141;
+    --border: #a6b3bf;
+    --table-header-background: #263744;
   }
 }
 
