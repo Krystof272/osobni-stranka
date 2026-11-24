@@ -21,11 +21,12 @@ a u každého hash commitu, který ho opravil (najdete ho v `git log --oneline`)
 
 | Nastavení | Co jsem při emulaci viděl | V pořádku |
 | --- | --- | --- |
-| prefers-color-scheme: dark | TODO | TODO |
-| prefers-contrast: more | TODO | TODO |
-| prefers-reduced-motion: reduce | TODO | TODO |
-| prefers-reduced-transparency: reduce | TODO | TODO |
-| forced-colors: active | TODO | TODO |
+| prefers-color-scheme: dark | Barvy pozadí, textu, odkazů a karet se přepnou na tmavou paletu, aby stránka odpovídala nastavení zařízení. | Ano |
+| prefers-contrast: more | Pozadí zbělá, text zčerná, odkazy se podtrhnou a okraje zesílí, aby se obsah lépe rozlišoval. | Ano |
+| prefers-reduced-motion: reduce | Animace, přechody a plynulé rolování se vypnou, aby se omezil rušivý pohyb. | Ano |
+| prefers-reduced-transparency: reduce | Průhledné pozadí karet se změní na plnou barvu a vypne se rozostření, aby byl obsah čitelnější. | Ano |
+| forced-colors: active | Použijí se systémové barvy a viditelné okraje i fokus, aby ovládací prvky zůstaly rozeznatelné ve vynuceném schématu. | Ano |
+| prefers-color-scheme: dark a prefers-contrast: more | Kombinace použije černé pozadí, bílý text a žluté odkazy, aby zůstal vysoký kontrast i v tmavém režimu. | Ano |
 
 ## Kritéria WCAG 2.2 úrovně A a AA
 
