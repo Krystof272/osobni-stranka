@@ -31,6 +31,7 @@ body {
 a {
   color: var(--link);
   text-underline-offset: 0.15rem;
+  transition: color 160ms ease, text-decoration-thickness 160ms ease;
 }
 
 a:hover {
@@ -124,6 +125,12 @@ p {
   border: 0.0625rem solid var(--border);
   border-radius: 0.5rem;
   background: var(--surface);
+  transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.card:hover {
+  transform: translateY(-0.15rem);
+  box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 18%);
 }
 
 .card img {
@@ -281,7 +288,22 @@ footer p {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  /* TODO */
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+
+  .card:hover {
+    transform: none;
+    box-shadow: none;
+  }
 }
 
 @media (prefers-reduced-transparency: reduce) {
