@@ -8,6 +8,7 @@
   --header-background: #12304a;
   --border: #687783;
   --table-header-background: #e7edf2;
+  --card-background: rgb(255 255 255 / 82%);
 }
 
 * {
@@ -124,7 +125,9 @@ p {
   padding: 1rem;
   border: 0.0625rem solid var(--border);
   border-radius: 0.5rem;
-  background: var(--surface);
+  background-color: var(--card-background);
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
   transition: box-shadow 180ms ease, transform 180ms ease;
 }
 
@@ -253,6 +256,7 @@ footer p {
     --header-background: #002141;
     --border: #a6b3bf;
     --table-header-background: #263744;
+    --card-background: rgb(24 35 45 / 82%);
   }
 }
 
@@ -307,7 +311,16 @@ footer p {
 }
 
 @media (prefers-reduced-transparency: reduce) {
-  /* TODO */
+  :root {
+    --card-background: var(--surface);
+  }
+
+  *,
+  *::before,
+  *::after {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
 }
 
 @media (forced-colors: active) {
