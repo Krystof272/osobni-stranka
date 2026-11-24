@@ -291,6 +291,21 @@ footer p {
   }
 }
 
+@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
+  :root {
+    color-scheme: dark;
+    --page-background: #000000;
+    --surface: #000000;
+    --text: #ffffff;
+    --muted-text: #ffffff;
+    --link: #ffff00;
+    --header-background: #000000;
+    --border: #ffffff;
+    --table-header-background: #000000;
+    --card-background: #000000;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
