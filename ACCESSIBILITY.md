@@ -8,7 +8,7 @@ a u každého hash commitu, který ho opravil (najdete ho v `git log --oneline`)
 | Nástroj | Před opravami | Po opravách |
 | --- | --- | --- |
 | Lighthouse (Accessibility) | 75/100/100/91 | 100/100/100/91 |
-| WAVE (Errors a Contrast Errors) | TODO | TODO |
+| WAVE (Errors a Contrast Errors) | 10/10 | 10/10 |
 | Test klávesnicí | TODO | TODO |
 
 ## Nalezené problémy a jejich opravy
