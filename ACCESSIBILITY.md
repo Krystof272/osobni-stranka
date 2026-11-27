@@ -18,6 +18,7 @@ a u každého hash commitu, který ho opravil (najdete ho v `git log --oneline`)
 | Například: odkaz „Více“ bez popisu | WAVE | `a1b2c3d` | 2.4.4 |
 | format obrazku | Lighthouse | 'f06d270' | 1.4.5 |
 | rozliseni obrazku | Lighthouse | 'f06d270' | 1.4.5 |
+| opraveni main fokus | kontrola 2.4.1 | '79e0076' | 2.4.1
 
 ## Test media rules
 
@@ -74,26 +75,26 @@ Kritéria označená „nové“ přibyla ve verzi 2.2.
 
 | Kritérium | Název | Úroveň | Stav | Kde a jak / proč ne |
 | --- | --- | --- | --- | --- |
-| 2.1.1 | Keyboard | A | TODO | TODO |
-| 2.1.2 | No Keyboard Trap | A | TODO | TODO |
-| 2.1.4 | Character Key Shortcuts | A | TODO | TODO |
-| 2.2.1 | Timing Adjustable | A | TODO | TODO |
-| 2.2.2 | Pause, Stop, Hide | A | TODO | TODO |
-| 2.3.1 | Three Flashes or Below Threshold | A | TODO | TODO |
-| 2.4.1 | Bypass Blocks | A | TODO | TODO |
-| 2.4.2 | Page Titled | A | TODO | TODO |
-| 2.4.3 | Focus Order | A | TODO | TODO |
-| 2.4.4 | Link Purpose (In Context) | A | TODO | TODO |
-| 2.4.5 | Multiple Ways | AA | TODO | TODO |
-| 2.4.6 | Headings and Labels | AA | TODO | TODO |
-| 2.4.7 | Focus Visible | AA | TODO | TODO |
-| 2.4.11 | Focus Not Obscured (Minimum) (nové) | AA | TODO | TODO |
-| 2.5.1 | Pointer Gestures | A | TODO | TODO |
-| 2.5.2 | Pointer Cancellation | A | TODO | TODO |
-| 2.5.3 | Label in Name | A | TODO | TODO |
-| 2.5.4 | Motion Actuation | A | TODO | TODO |
-| 2.5.7 | Dragging Movements (nové) | AA | TODO | TODO |
-| 2.5.8 | Target Size (Minimum) (nové) | AA | TODO | TODO |
+| 2.1.1 | Keyboard | A | Splněno | Veškeré dostupné funkce jsou odkazy a jsou ovladatelné klávesnicí: Tab, Shift+Tab a Enter. |
+| 2.1.2 | No Keyboard Trap | A | Splněno | Žádný prvek neuvězňuje fokus; po posledním ovládacím prvku lze pokračovat mimo stránku. |
+| 2.1.4 | Character Key Shortcuts | A | Nevztahuje se | Stránka nepoužívá zkratky tvořené jedním znakem. |
+| 2.2.1 | Timing Adjustable | A | Nevztahuje se | Stránka nemá časový limit ani časově omezenou aktivitu. |
+| 2.2.2 | Pause, Stop, Hide | A | Splněno | Stránka nemá automaticky začínající animace, blikání ani měnící se informace. |
+| 2.3.1 | Three Flashes or Below Threshold | A | Splněno | Stránka neobsahuje blikající ani třepající se obsah. |
+| 2.4.1 | Bypass Blocks | A | Splněno | Odkaz „Přejít na obsah“ umožňuje přeskočit záhlaví a navigaci; cílový `<main>` je díky `tabindex="-1"` programově focusovatelný. |
+| 2.4.2 | Page Titled | A | Splněno | Dokument má unikátní, popisný titul „Krystof Maly – osobní stránka“. |
+| 2.4.3 | Focus Order | A | Splněno | DOM pořadí odpovídá logické cestě: přeskočit obsah, navigační odkazy, hlavní obsah a e-mailový odkaz. |
+| 2.4.4 | Link Purpose (In Context) | A | Splněno | Texty „O mně“, „Projekty“, „Dovednosti“ a „Kontakt“ i e-mail jasně určují účel nebo cílovou akci. |
+| 2.4.5 | Multiple Ways | AA | Nevztahuje se | Jedná se o jednostránkový dokument; neexistuje sada podobných webových stránek, v níž by bylo nutné více způsobů navigace. |
+| 2.4.6 | Headings and Labels | AA | Splněno | Nadpisy `h1`–`h3` pojmenovávají sekce a projekty; tabulka má popisek a pojmenovaná záhlaví. |
+| 2.4.7 | Focus Visible | AA | Splněno | Prvky `a:focus-visible` mají výrazný obrys, posun od okraje a skip-link se při fokusu zobrazí. |
+| 2.4.11 | Focus Not Obscured (Minimum) (nové) | AA | Splněno | Stránka nemá sticky ani pevné překryvy; kolem fokusu není prvek, který by ho zakrýval. |
+| 2.5.1 | Pointer Gestures | A | Nevztahuje se | Stránka nepoužívá vícedotykové ani složité gesta. |
+| 2.5.2 | Pointer Cancellation | A | Splněno | Akce se provádí na odkazech pomocí standardního aktivování po kliknutí nebo stisku; vlastní operace při stisku ukazatele chybí. |
+| 2.5.3 | Label in Name | A | Splněno | Viditelné texty navigačních odkazů a e-mailového odkazu jsou použity i jako jejich přístupné názvy. |
+| 2.5.4 | Motion Actuation | A | Nevztahuje se | Stránka nepoužívá pohybové senzory ani pohyb zařízení. |
+| 2.5.7 | Dragging Movements (nové) | AA | Nevztahuje se | Stránka neobsahuje ovládací prvky ani obsah, který by vyžadoval přetahování. |
+| 2.5.8 | Target Size (Minimum) (nové) | AA | Splněno | Navigační a skip odkazy mají cílovou plochu větší než 24 px; e-mailový odkaz je v textovém řádku a má příslušnou výjimku. |
 
 ### 3 Understandable (srozumitelnost)
 
