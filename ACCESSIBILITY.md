@@ -118,5 +118,5 @@ Kritéria označená „nové“ přibyla ve verzi 2.2.
 
 | Kritérium | Název | Úroveň | Stav | Kde a jak / proč ne |
 | --- | --- | --- | --- | --- |
-| 4.1.2 | Name, Role, Value | A | TODO | TODO |
-| 4.1.3 | Status Messages | AA | TODO | TODO |
+| 4.1.2 | Name, Role, Value | A | Splněno | Nativní HTML prvky mají správné názvy, role a hodnoty: odkazy, navigace, záhlaví, sekce, tabulka a její buňky. |
+| 4.1.3 | Status Messages | AA | Nevztahuje se | Stránka nezobrazuje dynamická stavová hlášení ani automatické aktualizace obsahu; nejsou zde žádné upozornění nebo procesy potřebující živý region. |
