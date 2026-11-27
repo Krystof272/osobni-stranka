@@ -7,7 +7,7 @@ a u každého hash commitu, který ho opravil (najdete ho v `git log --oneline`)
 
 | Nástroj | Před opravami | Po opravách |
 | --- | --- | --- |
-| Lighthouse (Accessibility) | TODO | TODO |
+| Lighthouse (Accessibility) | 75/100/100/91 | 100/100/100/91 |
 | WAVE (Errors a Contrast Errors) | TODO | TODO |
 | Test klávesnicí | TODO | TODO |
 
@@ -16,6 +16,8 @@ a u každého hash commitu, který ho opravil (najdete ho v `git log --oneline`)
 | Problém | Jak jsem ho našel | Oprava (commit) | Kritérium WCAG |
 | --- | --- | --- | --- |
 | Například: odkaz „Více“ bez popisu | WAVE | `a1b2c3d` | 2.4.4 |
+| format obrazku | Lighthouse | 'f06d270' | 1.4.5 |
+| rozliseni obrazku | Lighthouse | 'f06d270' | 1.4.5 |
 
 ## Test media rules
 
