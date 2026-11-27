@@ -100,19 +100,19 @@ Kritéria označená „nové“ přibyla ve verzi 2.2.
 
 | Kritérium | Název | Úroveň | Stav | Kde a jak / proč ne |
 | --- | --- | --- | --- | --- |
-| 3.1.1 | Language of Page | A | TODO | TODO |
-| 3.1.2 | Language of Parts | AA | TODO | TODO |
-| 3.2.1 | On Focus | A | TODO | TODO |
-| 3.2.2 | On Input | A | TODO | TODO |
-| 3.2.3 | Consistent Navigation | AA | TODO | TODO |
-| 3.2.4 | Consistent Identification | AA | TODO | TODO |
-| 3.2.6 | Consistent Help (nové) | A | TODO | TODO |
-| 3.3.1 | Error Identification | A | TODO | TODO |
-| 3.3.2 | Labels or Instructions | A | TODO | TODO |
-| 3.3.3 | Error Suggestion | AA | TODO | TODO |
-| 3.3.4 | Error Prevention (Legal, Financial, Data) | AA | TODO | TODO |
-| 3.3.7 | Redundant Entry (nové) | A | TODO | TODO |
-| 3.3.8 | Accessible Authentication (Minimum) (nové) | AA | TODO | TODO |
+| 3.1.1 | Language of Page | A | Splněno | Kořenový element `<html>` má atribut `lang="cs"`, takže jazyk celé stránky je správně určený jako čeština. |
+| 3.1.2 | Language of Parts | AA | Splněno | Textové části stránky jsou česky; názvy projektů nebo technická označení nejsou samostatné pasáže v jiném přirozeném jazyce. |
+| 3.2.1 | On Focus | A | Splněno | Přesun fokusu na navigační odkaz nebo přeskočovací odkaz nemění kontext ani automaticky neotevírá nové obsahy. |
+| 3.2.2 | On Input | A | Nevztahuje se | Stránka neobsahuje formuláře ani vstupní ovládací prvky, u kterých by zadání měnilo kontext. |
+| 3.2.3 | Consistent Navigation | AA | Splněno | Navigace je uvedena pouze v jednom pevně pojatém seznamu a její pořadí je na celé stránce konzistentní. |
+| 3.2.4 | Consistent Identification | AA | Splněno | Odkazy a nadpisy sekcí mají ustálené, jednoznačné texty; stejné typy prvků se identifikují stejným způsobem. |
+| 3.2.6 | Consistent Help (nové) | A | Nevztahuje se | Stránka neposkytuje nápovědu, podporu ani další mechanismy pomoci, které by bylo nutné konzistentně umísťovat. |
+| 3.3.1 | Error Identification | A | Nevztahuje se | Na stránce není formulář ani uživatelské zadávání dat, které by mohlo vyvolat identifikovatelnou chybu. |
+| 3.3.2 | Labels or Instructions | A | Nevztahuje se | Stránka nemá vstupní pole ani úkony, které by potřebovaly popisky nebo zadávací instrukce. |
+| 3.3.3 | Error Suggestion | AA | Nevztahuje se | Stránka neposkytuje vstupy ani ověřování údajů, u kterých by bylo možné navrhnout opravu. |
+| 3.3.4 | Error Prevention (Legal, Financial, Data) | AA | Nevztahuje se | Stránka nepřijímá ani neodesílá právní, finanční nebo citlivé uživatelské údaje. |
+| 3.3.7 | Redundant Entry (nové) | A | Nevztahuje se | Stránka nemá vícestupňový ani informačně opakovaný proces zadávání. |
+| 3.3.8 | Accessible Authentication (Minimum) (nové) | AA | Nevztahuje se | Stránka neobsahuje přihlášení, autentizaci ani kognitivní ověřovací úlohy. |
 
 ### 4 Robust (robustnost)
 
