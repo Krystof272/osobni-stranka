@@ -49,26 +49,26 @@ Kritéria označená „nové“ přibyla ve verzi 2.2.
 
 | Kritérium | Název | Úroveň | Stav | Kde a jak / proč ne |
 | --- | --- | --- | --- | --- |
-| 1.1.1 | Non-text Content | A | TODO | TODO |
-| 1.2.1 | Audio-only and Video-only (Prerecorded) | A | TODO | TODO |
-| 1.2.2 | Captions (Prerecorded) | A | TODO | TODO |
-| 1.2.3 | Audio Description or Media Alternative (Prerecorded) | A | TODO | TODO |
-| 1.2.4 | Captions (Live) | AA | TODO | TODO |
-| 1.2.5 | Audio Description (Prerecorded) | AA | TODO | TODO |
-| 1.3.1 | Info and Relationships | A | TODO | TODO |
-| 1.3.2 | Meaningful Sequence | A | TODO | TODO |
-| 1.3.3 | Sensory Characteristics | A | TODO | TODO |
-| 1.3.4 | Orientation | AA | TODO | TODO |
-| 1.3.5 | Identify Input Purpose | AA | TODO | TODO |
-| 1.4.1 | Use of Color | A | TODO | TODO |
-| 1.4.2 | Audio Control | A | TODO | TODO |
-| 1.4.3 | Contrast (Minimum) | AA | TODO | TODO |
-| 1.4.4 | Resize Text | AA | TODO | TODO |
-| 1.4.5 | Images of Text | AA | TODO | TODO |
-| 1.4.10 | Reflow | AA | TODO | TODO |
-| 1.4.11 | Non-text Contrast | AA | TODO | TODO |
-| 1.4.12 | Text Spacing | AA | TODO | TODO |
-| 1.4.13 | Content on Hover or Focus | AA | TODO | TODO |
+| 1.1.1 | Non-text Content | A | Splněno | Všechny významné fotografie mají atribut `alt` popisující jejich obsah. |
+| 1.2.1 | Audio-only and Video-only (Prerecorded) | A | Nevztahuje se | Stránka neobsahuje předem nahrané ani živé audio ani video. |
+| 1.2.2 | Captions (Prerecorded) | A | Nevztahuje se | Stránka neobsahuje předem nahrané video ani audio, které by vyžadovalo titulky. |
+| 1.2.3 | Audio Description or Media Alternative (Prerecorded) | A | Nevztahuje se | Stránka neobsahuje předem nahrané audio ani video. |
+| 1.2.4 | Captions (Live) | AA | Nevztahuje se | Stránka neobsahuje živé audio ani video. |
+| 1.2.5 | Audio Description (Prerecorded) | AA | Nevztahuje se | Stránka neobsahuje předem nahrané audio ani video. |
+| 1.3.1 | Info and Relationships | A | Splněno | Obsah používá sémantické prvky `header`, `nav`, `main`, `section`, `article` a `footer`; tabulka má `caption`, `th` a atributy `scope`. |
+| 1.3.2 | Meaningful Sequence | A | Splněno | Zdrojové pořadí odpovídá vizuální posloupnosti: záhlaví a navigace, hlavní sekce, patička. |
+| 1.3.3 | Sensory Characteristics | A | Splněno | Pokyny a popisy závisí na textu a sémantické struktuře, nikoli pouze na barvě, tvaru nebo poloze. |
+| 1.3.4 | Orientation | AA | Splněno | CSS nerozlišuje ani neomezuje orientaci zařízení; rozvržení se přizpůsobuje dostupné šířce. |
+| 1.3.5 | Identify Input Purpose | AA | Nevztahuje se | Stránka neobsahuje formuláře ani vstupní pole uživatele. |
+| 1.4.1 | Use of Color | A | Splněno | Informace nejsou sdělovány pouze barvou; text, nadpisy, odkazy a tabulkové hlavičky jsou čitelné samostatně. |
+| 1.4.2 | Audio Control | A | Nevztahuje se | Stránka automaticky nepřehrává žádné zvukové médium. |
+| 1.4.3 | Contrast (Minimum) | AA | Splněno | CSS definuje kontrastní světlou i tmavou paletu pro text, tlumený text, odkazy a pozadí; přepínače poskytují vysoký kontrast. |
+| 1.4.4 | Resize Text | AA | Splněno | Text je nastaven relativními jednotkami a layout reaguje na změnu velikosti viewportu i zvětšení textu. |
+| 1.4.5 | Images of Text | AA | Splněno | Obrázky jsou fotografie a grafika projektů; text stránky není vykreslen jako soubor obrázku. |
+| 1.4.10 | Reflow | AA | Splněno | Při zmenšení šířky se navigace a projektové karty přeorganizují do menšího počtu sloupců, nakonec do jednoho sloupce. |
+| 1.4.11 | Non-text Contrast | AA | Splněno | Ohraničení, text a odkazy používají výrazné systémové i vlastní kontrastní barvy ve všech barevných variantách. |
+| 1.4.12 | Text Spacing | AA | Splněno | Rozvržení nepoužívá absolutní výšky ani pevná omezení, která by bránila zvětšení řádkování a mezer. |
+| 1.4.13 | Content on Hover or Focus | AA | Nevztahuje se | Stránka nezobrazuje další obsah při najetí myší ani při fokusu. |
 
 ### 2 Operable (ovladatelnost)
 
