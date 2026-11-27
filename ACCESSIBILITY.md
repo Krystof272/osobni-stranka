@@ -9,7 +9,7 @@ a u každého hash commitu, který ho opravil (najdete ho v `git log --oneline`)
 | --- | --- | --- |
 | Lighthouse (Accessibility) | 75/100/100/91 | 100/100/100/91 |
 | WAVE (Errors a Contrast Errors) | 10/10 | 10/10 |
-| Test klávesnicí | TODO | TODO |
+| Test klávesnicí | funguje | funguje |
 
 ## Nalezené problémy a jejich opravy
 
